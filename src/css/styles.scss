@@ -120,7 +120,7 @@ body.tema.claro {
 
 body.tema.claro {
     .menuNav {
-        margin-left: 35%;
+        margin-left: 40%;
         margin-bottom: 1%;
     }
 }
@@ -128,6 +128,7 @@ body.tema.claro {
 body.tema.claro {
     .filaCabecera {
         background-color: $claroPrimario;
+        margin-bottom: 0.5%;
     }
 }
 
@@ -211,17 +212,6 @@ body.tema.oscuro {
 body.tema.oscuro {
     nav {
         ul {
-            li:hover {
-                background-color: $oscuroTerciario;
-                border-bottom: 0px;
-            }
-        } 
-    } 
-}
-
-body.tema.oscuro {
-    nav {
-        ul {
             li {
                 a {
                     text-decoration: none;
@@ -290,6 +280,7 @@ body.tema.oscuro {
 body.tema.oscuro {
     .filaCabecera {
         background-color: $oscuroPrimario;
+        margin-bottom: 2%;
     }
 }
 
@@ -305,27 +296,20 @@ body.tema.oscuro footer {
 .logo {
     width: 100px;
     height: 100px;
-  }
-  
-.logo {
     margin-left: 10px;
-    width: 100px;
-    height: 100px;
-}
+  }
 
 .cabecera {
     h1 {
-        margin-left: 25%;
+        margin-left: 33%;
         margin-top: 3%;
     }
 }
 
 .gear {
-    cursor:pointer;
-    border:none;
     margin-top: 2%;
-    margin-right: -2%;
     img {
+        cursor: pointer;
         width: 50px;
         height: 50px;
         margin-left: -25px;
@@ -335,28 +319,57 @@ body.tema.oscuro footer {
 .menuNav {
     li {
         a {
-            color: black;
             font-weight: bold;
             text-decoration: none;
             padding: 10px;
             font-size: large;
+            color: black;
         }
     }
     color: black
 }
 
 body {
+    font-family: 'Noto Serif';
+    font-size: 17px;
     .tablero {
         margin: 0 2% 2% 2%;
     }
 }
 
-.filaCabecera {
-    margin-bottom: 2%;
-}
-
 footer {
-    position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.titulo {
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+
+.datosNueva {
+    margin-top: 10%;
+    input {
+        width: 100%;
+        height: 100%;
+    }
+    .agregar {
+        img {
+            cursor:pointer;
+            width: 40px;
+            height: 40px;
+            margin-top: -4%;
+        }
+    }
+}
+
+.contenidoTarjeta {
+    .options {
+        margin-left: 95%;
+        img {
+            width: 7%;
+            height: 7%;
+        }
+    }
 }
