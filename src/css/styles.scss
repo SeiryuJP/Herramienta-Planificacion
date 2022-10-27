@@ -1,3 +1,362 @@
+/* Colores
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+// Tema claro
+$claroFondo: #FAF7F0;
+$claroPrimario: #BCCEF8;
+$claroSecundario: #cdfcf6c8;
+$claroTerciario: #98A8F8;
+
+// Tema oscuro
+$oscuroFondo: #BFACE0;
+$oscuroPrimario: #645CAA;
+$oscuroSecundario: #EBC7E8;
+$oscuroTerciario: #A084CA;
+
+
+/* Estilos de temas
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+//Tema claro
+body.tema.claro {
+    background-color: $claroFondo;
+    /*
+        .modal {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100vw;
+            height: 100vh;
+  
+            div {
+                width: 50vw;
+                height: 50vh;
+                position: absolute;
+                top: 20%;
+                left: 30%;
+                background-color: white;
+                border-radius: 10px;
+            }
+        }*/
+}
+
+body.tema.claro {
+    nav {
+        ul {
+            li {
+                display: block;
+                float: left;
+                border: 1px solid black;
+                background-color: $claroPrimario;
+            }
+        } 
+    } 
+}
+
+body.tema.claro {
+    nav {
+        ul {
+            li:hover {
+                background-color: $claroTerciario;
+            }
+        } 
+    } 
+}
+
+body.tema.claro {
+    .tablero {
+        background-color: $claroPrimario;
+        padding: 1em;
+    }
+} 
+
+body.tema.claro {
+    .panel {
+        padding: 1em;
+        background-color: $claroSecundario;
+        border-radius: 10px;
+    }
+} 
+
+body.tema.claro {
+    .tarjetas {
+        background-color: $claroTerciario;
+        border-radius: 10px;
+        padding: 2em;
+        border: 1px solid black;
+        margin-top: 1em;
+    }
+} 
+
+body.tema.claro {
+    .anadir {
+        text-align: center;
+    }
+} 
+
+body.tema.claro {
+    .modal {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+} 
+
+body.tema.claro {
+    .modal {
+        div.contenido {
+            width: 40vw;
+            height: 70vh;
+            border-radius: 10px;
+            background-color: white;
+            position: absolute;
+            left: 30%;
+            top: 10%;
+        }
+    } 
+} 
+
+body.tema.claro {
+    .menuNav {
+        margin-left: 35%;
+        margin-bottom: 1%;
+    }
+}
+
+body.tema.claro {
+    .filaCabecera {
+        background-color: $claroPrimario;
+    }
+}
+
+body.tema.claro {
+    footer {
+        text-align: center;
+        background-color: $claroPrimario;
+    }
+} 
+
+
+//Tema oscuro
+body.tema.oscuro {
+    background-color: $oscuroFondo;
+}
+
+body.tema.oscuro {
+    nav {
+        ul {
+            list-style: none;
+            display: flow-root;
+            width: 600px;
+            margin: 0;
+        }
+    } 
+} 
+
+body.tema.oscuro {
+    nav {
+        ul {
+            li {
+                border-radius: 0px 10px 0px 0px;
+                float: left;
+                padding: 1em;
+                background-color: $oscuroPrimario;
+                margin-left: 1em;
+            }
+        } 
+    } 
+} 
+
+body.tema.oscuro {
+    .menuNav {
+        margin-bottom: -0.7em;
+        margin-left: 3em;
+    }
+} 
+
+body.tema.oscuro {
+    nav {
+        ul {
+            li {
+                padding: 1px;
+            }
+        } 
+    } 
+} 
+
+body.tema.oscuro {
+    nav {
+        ul {
+            li:active {
+                background-color: $oscuroTerciario;
+                border-bottom: 0px;
+            }
+        } 
+    } 
+} 
+
+body.tema.oscuro {
+    nav {
+        ul {
+            li:hover {
+                background-color: $oscuroTerciario;
+                border-bottom: 0px;
+            }
+        } 
+    } 
+}
+
+body.tema.oscuro {
+    nav {
+        ul {
+            li:hover {
+                background-color: $oscuroTerciario;
+                border-bottom: 0px;
+            }
+        } 
+    } 
+}
+
+body.tema.oscuro {
+    nav {
+        ul {
+            li {
+                a {
+                    text-decoration: none;
+                }
+            } 
+        } 
+    } 
+} 
+
+body.tema.oscuro {
+    .tablero {
+        background-color: $oscuroPrimario;
+        padding: 1em;
+    }
+} 
+
+body.tema.oscuro {
+    .panel {
+        padding: 1em;
+        background-color: $oscuroSecundario;
+        border-radius: 10px;
+    }
+} 
+
+body.tema.oscuro {
+    .tarjetas {
+        background-color: $oscuroTerciario;
+        border-radius: 10px;
+        padding: 2em;
+        border: 1px solid black;
+        margin-top: 1em;
+    }
+} 
+
+body.tema.oscuro {
+    .anadir {
+        text-align: center;
+    }
+} 
+
+body.tema.oscuro {
+    .modal {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+} 
+
+body.tema.oscuro {
+    .modal {
+        div.contenido {
+            width: 40vw;
+            height: 70vh;
+            border-radius: 10px;
+            background-color: white;
+            position: absolute;
+            left: 30%;
+            top: 10%;
+        }
+    } 
+} 
+
+body.tema.oscuro {
+    .filaCabecera {
+        background-color: $oscuroPrimario;
+    }
+}
+
+body.tema.oscuro footer {
+    text-align: center;
+    background-color: $oscuroPrimario;
+}
+
+
+/* Estilos generales
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.logo {
+    width: 100px;
+    height: 100px;
+  }
+  
+.logo {
+    margin-left: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.cabecera {
+    h1 {
+        margin-left: 25%;
+        margin-top: 3%;
+    }
+}
+
+.gear {
+    cursor:pointer;
+    border:none;
+    margin-top: 2%;
+    margin-right: -2%;
+    img {
+        width: 50px;
+        height: 50px;
+        margin-left: -25px;
+    }
+}
+
+.menuNav {
+    li {
+        a {
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 10px;
+            font-size: large;
+        }
+    }
+    color: black
+}
+
 body {
-    background-color: rgb(191, 26, 98);
+    .tablero {
+        margin: 0 2% 2% 2%;
+    }
+}
+
+.filaCabecera {
+    margin-bottom: 2%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
