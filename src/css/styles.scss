@@ -1,23 +1,37 @@
+/* Imports
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import 'menus';
+
 /* Colores
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 // Tema claro
-$claroFondo: #FAF7F0;
-$claroPrimario: #BCCEF8;
-$claroSecundario: #cdfcf6c8;
-$claroTerciario: #98A8F8;
+$temaClaro: (
+    "fondo": #FAF7F0,
+    "primario": #BCCEF8,
+    "secundario": #cdfcf6c8,
+    "terciario": #98A8F8,
+    "texto": black,
+    "bordeTarjeta": 1px solid black
+);
+
 
 // Tema oscuro
-$oscuroFondo: #BFACE0;
-$oscuroPrimario: #645CAA;
-$oscuroSecundario: #EBC7E8;
-$oscuroTerciario: #A084CA;
-
+$temaOscuro: (
+    "fondo": #BFACE0,
+    "primario": #645CAA,
+    "secundario": #EBC7E8,
+    "terciario": #A084CA,
+    "texto": black,
+    "bordeTarjeta": 1px solid black
+);
 
 /* Estilos de temas
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 //Tema claro
 body.tema.claro {
-    background-color: $claroFondo;
+    @include horizontal($temaClaro);
+    @include acordeon($temaClaro);
+    background-color: map-get($temaClaro, "fondo");
     /*
         .modal {
             position: absolute;
@@ -37,63 +51,25 @@ body.tema.claro {
                 border-radius: 10px;
             }
         }*/
-}
-
-body.tema.claro {
-    nav {
-        ul {
-            li {
-                display: block;
-                float: left;
-                border: 1px solid black;
-                background-color: $claroPrimario;
-            }
-        } 
-    } 
-}
-
-body.tema.claro {
-    nav {
-        ul {
-            li:hover {
-                background-color: $claroTerciario;
-            }
-        } 
-    } 
-}
-
-body.tema.claro {
     .tablero {
-        background-color: $claroPrimario;
+        background-color: map-get($temaClaro, "primario");
         padding: 1em;
     }
-} 
-
-body.tema.claro {
     .panel {
         padding: 1em;
-        background-color: $claroSecundario;
+        background-color: map-get($temaClaro, "secundario");
         border-radius: 10px;
     }
-} 
-
-body.tema.claro {
     .tarjetas {
-        background-color: $claroTerciario;
+        background-color: map-get($temaClaro, "terciario");
         border-radius: 10px;
         padding: 2em;
-        border: 1px solid black;
+        border: map-get($temaClaro, "bordeTarjeta");
         margin-top: 1em;
     }
-} 
-
-body.tema.claro {
     .anadir {
         text-align: center;
     }
-} 
-
-body.tema.claro {
     .modal {
         background-color: rgba(0, 0, 0, 0.5);
         width: 100vw;
@@ -101,11 +77,6 @@ body.tema.claro {
         position: absolute;
         top: 0;
         left: 0;
-    }
-} 
-
-body.tema.claro {
-    .modal {
         div.contenido {
             width: 40vw;
             height: 70vh;
@@ -115,144 +86,56 @@ body.tema.claro {
             left: 30%;
             top: 10%;
         }
-    } 
-} 
-
-body.tema.claro {
-    .menuNav {
-        margin-left: 40%;
-        margin-bottom: 1%;
     }
-}
-
-body.tema.claro {
     .filaCabecera {
-        background-color: $claroPrimario;
+        background-color: map-get($temaClaro, "primario");
         margin-bottom: 0.5%;
     }
-}
-
-body.tema.claro {
     footer {
         text-align: center;
-        background-color: $claroPrimario;
+        background-color: map-get($temaClaro, "primario");
     }
+    .barraDeProgreso {
+        border: 1px solid black;
+        border-radius: 5px;
+        display: block;
+        width: 80%;
+    }
+    .barraDeProgreso {
+        div.barra {
+            display: block;
+            height: 1em;
+            width: 60%;
+            border-radius: 5px;
+            background-color: blue;
+        }
+    } 
 } 
-
 
 //Tema oscuro
 body.tema.oscuro {
-    background-color: $oscuroFondo;
-}
-
-body.tema.oscuro {
-    nav {
-        ul {
-            list-style: none;
-            display: flow-root;
-            width: 600px;
-            margin: 0;
-        }
-    } 
-} 
-
-body.tema.oscuro {
-    nav {
-        ul {
-            li {
-                border-radius: 0px 10px 0px 0px;
-                float: left;
-                padding: 1em;
-                background-color: $oscuroPrimario;
-                margin-left: 1em;
-            }
-        } 
-    } 
-} 
-
-body.tema.oscuro {
-    .menuNav {
-        margin-bottom: -0.7em;
-        margin-left: 3em;
-    }
-} 
-
-body.tema.oscuro {
-    nav {
-        ul {
-            li {
-                padding: 1px;
-            }
-        } 
-    } 
-} 
-
-body.tema.oscuro {
-    nav {
-        ul {
-            li:active {
-                background-color: $oscuroTerciario;
-                border-bottom: 0px;
-            }
-        } 
-    } 
-} 
-
-body.tema.oscuro {
-    nav {
-        ul {
-            li:hover {
-                background-color: $oscuroTerciario;
-                border-bottom: 0px;
-            }
-        } 
-    } 
-}
-
-body.tema.oscuro {
-    nav {
-        ul {
-            li {
-                a {
-                    text-decoration: none;
-                }
-            } 
-        } 
-    } 
-} 
-
-body.tema.oscuro {
+    @include pestanias($temaOscuro);
+    @include acordeon($temaOscuro);
+    background-color: map-get($temaOscuro, "fondo");
     .tablero {
-        background-color: $oscuroPrimario;
+        background-color: map-get($temaOscuro, "primario");
         padding: 1em;
     }
-} 
-
-body.tema.oscuro {
     .panel {
         padding: 1em;
-        background-color: $oscuroSecundario;
+        background-color: map-get($temaOscuro, "secundario");
         border-radius: 10px;
     }
-} 
-
-body.tema.oscuro {
     .tarjetas {
-        background-color: $oscuroTerciario;
+        background-color: map-get($temaOscuro, "terciario");
         border-radius: 10px;
         padding: 2em;
-        border: 1px solid black;
+        border: map-get($temaOscuro, "bordeTarjetas");
         margin-top: 1em;
     }
-} 
-
-body.tema.oscuro {
     .anadir {
         text-align: center;
     }
-} 
-
-body.tema.oscuro {
     .modal {
         background-color: rgba(0, 0, 0, 0.5);
         width: 100vw;
@@ -260,11 +143,6 @@ body.tema.oscuro {
         position: absolute;
         top: 0;
         left: 0;
-    }
-} 
-
-body.tema.oscuro {
-    .modal {
         div.contenido {
             width: 40vw;
             height: 70vh;
@@ -274,25 +152,19 @@ body.tema.oscuro {
             left: 30%;
             top: 10%;
         }
-    } 
-} 
-
-body.tema.oscuro {
+    }
     .filaCabecera {
-        background-color: $oscuroPrimario;
+        background-color: map-get($temaOscuro, "primario");
         margin-bottom: 2%;
+    }
+    footer {
+        text-align: center;
+        background-color: map-get($temaOscuro, "primario");
     }
 }
 
-body.tema.oscuro footer {
-    text-align: center;
-    background-color: $oscuroPrimario;
-}
-
-
 /* Estilos generales
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 .logo {
     width: 100px;
     height: 100px;
@@ -314,19 +186,6 @@ body.tema.oscuro footer {
         height: 50px;
         margin-left: -25px;
     }
-}
-
-.menuNav {
-    li {
-        a {
-            font-weight: bold;
-            text-decoration: none;
-            padding: 10px;
-            font-size: large;
-            color: black;
-        }
-    }
-    color: black
 }
 
 body {
