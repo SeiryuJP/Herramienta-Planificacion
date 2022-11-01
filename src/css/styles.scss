@@ -29,7 +29,7 @@ $temaOscuro: (
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 //Tema claro
 body.tema.claro {
-    @include horizontal($temaClaro);
+    @include vertical($temaClaro);
     @include acordeon($temaClaro);
     background-color: map-get($temaClaro, "fondo");
     /*
@@ -114,7 +114,7 @@ body.tema.claro {
 
 //Tema oscuro
 body.tema.oscuro {
-    @include pestanias($temaOscuro);
+    @include vertical($temaOscuro);
     @include acordeon($temaOscuro);
     background-color: map-get($temaOscuro, "fondo");
     .tablero {
