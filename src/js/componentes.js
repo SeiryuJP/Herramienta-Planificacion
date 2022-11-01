@@ -31,7 +31,6 @@ export const crearTareaHTML = (tarea) => {
 
 botonAgregar.addEventListener('click', (event) => {
     const nuevaTarea = new Tarea(txtInput.value);
-    tareaLista.nuevaTarea(nuevaTarea);
     crearTareaHTML(nuevaTarea);
     txtInput.value = '';
 })
