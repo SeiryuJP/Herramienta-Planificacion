@@ -1,6 +1,6 @@
 export class Tarea {
-    static fromJSON({id, tarea}) {
-        const tempTarea = new tarea(tarea);
+    static fromJSON({id, tarea, creado}) {
+        const tempTarea = new Tarea(tarea);
         tempTarea.id = id;
         tempTarea.creado = creado;
         

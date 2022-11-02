@@ -32,25 +32,6 @@ body.tema.claro {
     @include horizontal($temaClaro);
     @include acordeon($temaClaro);
     background-color: map-get($temaClaro, "fondo");
-    /*
-        .modal {
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: rgba(0, 0, 0, 0.5);
-            width: 100vw;
-            height: 100vh;
-  
-            div {
-                width: 50vw;
-                height: 50vh;
-                position: absolute;
-                top: 20%;
-                left: 30%;
-                background-color: white;
-                border-radius: 10px;
-            }
-        }*/
     .tablero {
         background-color: map-get($temaClaro, "primario");
         padding: 1em;
@@ -71,12 +52,13 @@ body.tema.claro {
         text-align: center;
     }
     .modal {
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.7);
         width: 100vw;
         height: 100vh;
         position: absolute;
         top: 0;
         left: 0;
+        display: none;
         div.contenido {
             width: 40vw;
             height: 70vh;
@@ -85,6 +67,16 @@ body.tema.claro {
             position: absolute;
             left: 30%;
             top: 10%;
+            img {
+                width: 5%;
+                height: 5%;
+                margin-left: 95%;
+                cursor: pointer;
+            }
+            .barraDeProgreso {
+                margin-top: 10%;
+                margin-left: 10%;
+            }
         }
     }
     .filaCabecera {
@@ -143,6 +135,7 @@ body.tema.oscuro {
         position: absolute;
         top: 0;
         left: 0;
+        display: none;
         div.contenido {
             width: 40vw;
             height: 70vh;
@@ -225,6 +218,14 @@ footer {
 
 .contenidoTarjeta {
     .options {
+        margin-left: 95%;
+        img {
+            cursor:pointer;
+            width: 7%;
+            height: 7%;
+        }
+    }
+    .delete {
         margin-left: 95%;
         img {
             cursor:pointer;

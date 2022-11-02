@@ -17,7 +17,7 @@ export class TareaLista {
     }
 
     guardarLocalStorage() {
-        localStroga.setItem('tarea', JSON.stringify(this.todo));
+        localStorage.setItem('tarea', JSON.stringify(this.tarea));
     }
 
     cargarLocalStorage() {
