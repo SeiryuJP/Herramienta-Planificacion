@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workflow Sense</title>
+</head>
+<body id="body" class="tema claro">
+    <div class="row filaCabecera">
+        <div class="m-two s-two columns">
+            <img class="logo" src="./assets/logo.png">
+        </div>
+        <div class="m-eight s-eight columns">
+            <header class="cabecera"> 
+                <h1>WORFLOW SENSE</h1>
+            </header>
+        </div>
+        <div class="m-one s-one columns gear">
+        </div>
+        <div class="m-one s-one columns gear">
+            <a id="cambioTema"><img src="./assets/options-icon.png"></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="m-five s-five columns menuNav">
+            <nav>
+                <ul>
+                    <li><a href="">Tablero 1</a></li>
+                    <li><a href="">Tablero 2</a></li>
+                    <li><a href="">Tablero 3</a></li>
+                    <li><a href="">Tablero 4</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="m-twelve s-twelve colums">
+            <div class="row tablero">
+                <div class="m-four s-twelve columns panel porHacer">
+                    <div class="row">
+                        <div class="m-twelve s-twelve columns titulo">
+                            LISTA DE TAREAS
+                        </div>
+                    </div>
+                    <div class="row zonaTarjetas">
+                        <div class="m-twelve s-twelve columns tarjetas" draggable="true">
+                            <div class="row contenidoTarjeta">
+                                <div class="m-twelve s-twelve columns">
+                                    <label class="nombreTarea">PlaceHolder</label>
+                                    <a class="options"><img src="./assets/menu-list-icon.png"></a>
+                                    <a class="delete"><img src="./assets/trash.png"></a>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="row datosNueva">
+                        <div class="m-ten s-ten columns">
+                            <input class="nuevaTarea">
+                        </div>
+                        <div class="m-two s-two columns">
+                            <a class="agregar"><img src="./assets/add-icon.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-four s-twelve columns panel desaparece enProceso">
+                    <div class="row">
+                        <div class="m-twelve columns titulo">
+                            EN PROCESO
+                        </div>
+                    </div>
+                    <div class="row zonaTarjetas">
+                        
+                    </div>
+                    <div class="row datosNueva">
+                        <div class="m-ten columns">
+                            <input type="text">
+                        </div>
+                        <div class="m-two s-two columns">
+                            <a class="agregar"><img src="./assets/add-icon.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-four s-twelve columns panel desaparece hecho">
+                    <div class="row">
+                        <div class="m-twelve s-twelve columns titulo">
+                            HECHO
+                        </div>
+                    </div>
+                    <div class="row zonaTarjetas">
+                        
+                    </div>
+                    <div class="row datosNueva">
+                        <div class="m-ten s-ten columns">
+                            <input>
+                        </div>
+                        <div class="m-two s-two columns">
+                            <a class="agregar"><img src="./assets/add-icon.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal">
+                <div class="contenido">
+                    <div>
+                        <a class="close"><img src="./assets/x-icon.png"></a>
+                    </div>
+                    <div class="barraDeProgreso">
+                        <div class="barra">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="desaparece">
+        Pagina realizada por Khattari
+    </footer>
+</body>
+</html>
