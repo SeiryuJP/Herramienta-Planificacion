@@ -37,76 +37,40 @@
     <div class="row">
         <div class="m-twelve s-twelve colums">
             <div class="row tablero">
-                <div class="m-four s-twelve columns panel">
+                <div class="m-four s-twelve columns panel porHacer">
                     <div class="row">
                         <div class="m-twelve s-twelve columns titulo">
                             LISTA DE TAREAS
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="m-twelve s-twelve columns tarjetas">
-                            <div class="row">
-                                <div class="m-twelve s-twelve columns">
-                                    tarjeta 1
-                                </div>
-                            </div>
+                    <div class="row zonaTarjetas">
+                        <div class="m-twelve s-twelve columns tarjetas" draggable="true">
                             <div class="row contenidoTarjeta">
                                 <div class="m-twelve s-twelve columns">
+                                    <label class="nombreTarea">PlaceHolder</label>
                                     <a class="options"><img src="./assets/menu-list-icon.png"></a>
-                                </div>
-                            </div>  
-                        </div>
-                        <div class="m-twelve s-twelve columns tarjetas">
-                            <div class="row">
-                                <div class="m-twelve s-twelve columns">
-                                    tarjeta 2
-                                </div>
-                            </div>
-                            <div class="row contenidoTarjeta">
-                                <div class="m-twelve s-twelve columns">
-                                    <a class="options"><img src="./assets/menu-list-icon.png"></a>
-                                </div>
-                            </div>  
-                        </div>
-                        <div class="m-twelve s-twelve columns tarjetas">
-                            <div class="row">
-                                <div class="m-twelve s-twelve columns">
-                                    tarjeta 3
-                                </div>
-                            </div>
-                            <div class="row contenidoTarjeta">
-                                <div class="m-twelve s-twelve columns">
-                                    <a class="options"><img src="./assets/menu-list-icon.png"></a>
-                                </div>
-                            </div>  
-                        </div>
-                        <div class="m-twelve s-twelve columns tarjetas">
-                            <div class="row">
-                                <div class="m-twelve s-twelve columns">
-                                    tarjeta 4
-                                </div>
-                            </div>
-                            <div class="row contenidoTarjeta">
-                                <div class="m-twelve s-twelve columns">
-                                    <a class="options"><img src="./assets/menu-list-icon.png"></a>
+                                    <a class="delete"><img src="./assets/trash.png"></a>
                                 </div>
                             </div>  
                         </div>
                     </div>
                     <div class="row datosNueva">
                         <div class="m-ten s-ten columns">
-                            <input type="text">
+                            <input class="nuevaTarea">
                         </div>
                         <div class="m-two s-two columns">
                             <a class="agregar"><img src="./assets/add-icon.png"></a>
                         </div>
                     </div>
                 </div>
-                <div class="m-four s-twelve columns panel desaparece">
+                <div class="m-four s-twelve columns panel desaparece enProceso">
                     <div class="row">
                         <div class="m-twelve columns titulo">
                             EN PROCESO
                         </div>
+                    </div>
+                    <div class="row zonaTarjetas">
+                        
                     </div>
                     <div class="row datosNueva">
                         <div class="m-ten columns">
@@ -117,15 +81,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="m-four s-twelve columns panel desaparece">
+                <div class="m-four s-twelve columns panel desaparece hecho">
                     <div class="row">
                         <div class="m-twelve s-twelve columns titulo">
                             HECHO
                         </div>
                     </div>
+                    <div class="row zonaTarjetas">
+                        
+                    </div>
                     <div class="row datosNueva">
                         <div class="m-ten s-ten columns">
-                            <input type="text">
+                            <input>
                         </div>
                         <div class="m-two s-two columns">
                             <a class="agregar"><img src="./assets/add-icon.png"></a>
@@ -133,22 +100,22 @@
                     </div>
                 </div>
             </div>
-            <!--modal 
+
             <div class="modal">
                 <div class="contenido">
-                    Mis tareas
+                    <div>
+                        <a class="close"><img src="./assets/x-icon.png"></a>
+                    </div>
                     <div class="barraDeProgreso">
                         <div class="barra">
-
                         </div>
                     </div>
-                    
                 </div>
             </div>
-        -->
+
         </div>
     </div>
-    <footer>
+    <footer class="desaparece">
         Pagina realizada por Khattari
     </footer>
 </body>
